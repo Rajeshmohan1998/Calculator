@@ -14,17 +14,24 @@ public class CalculatorMain {
 		System.out.println("Please choose the operation :");
 		int choice = sc.nextInt();
 		System.out.println("Please enter the value 1");
-		int num1 = sc.nextInt();
+		double num1 = sc.nextInt();
 		System.out.println("Please enter the value 2");
-		int num2 = sc.nextInt();
-		//switch case
+		double num2 = sc.nextInt();
 		
+		CalculatorAddSub obj2 = new CalculatorAddSub();
+		
+		//switch case
 		switch(choice)
 		{
 			case 1:
+				obj2.add(num1, num2);
+				break;
 			case 2:
-			case 3:
+				obj2.sub(num1, num2);
+				break;
+		/*	case 3:
 			case 4:
+			*/
 			default:
 				System.out.println("invalid choice");	
 		}
