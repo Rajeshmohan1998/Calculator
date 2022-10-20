@@ -11,31 +11,35 @@ public class CalculatorMain {
 		CalculatorMain obj = new CalculatorMain();
 		obj.display();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please choose the operation :");
+		System.out.print("Please choose the operation to perform: ");
 		int choice = sc.nextInt();
-		System.out.println("Please enter the value 1");
+		System.out.print("\nPlease enter the value 1: ");
 		double num1 = sc.nextInt();
-		System.out.println("Please enter the value 2");
+		System.out.print("\nPlease enter the value 2: ");
 		double num2 = sc.nextInt();
 		
 		CalculatorAddSub obj2 = new CalculatorAddSub();
+		CalculatorProDiv obj3 = new CalculatorProDiv();
 		
 		//switch case
 		switch(choice)
 		{
 			case 1:
 				obj2.add(num1, num2);
-				break;
+				break;     
 			case 2:
 				obj2.sub(num1, num2);
 				break;
-		/*	case 3:
+			case 3:
+				obj3.product(num1, num2);
+				break;  
 			case 4:
-			*/
+				obj3.divide(num1, num2);
+				break;
 			default:
 				System.out.println("invalid choice");	
 		}
-		
+		sc.close();
 	}
 
 }
