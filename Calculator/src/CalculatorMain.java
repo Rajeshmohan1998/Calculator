@@ -26,13 +26,13 @@ public class CalculatorMain {
 		{
 			case 1:
 				obj2.add(num1, num2);
-				break;
+				break;     
 			case 2:
 				obj2.sub(num1, num2);
 				break;
 			case 3:
 				obj3.product(num1, num2);
-				break;
+				break;  
 			case 4:
 				obj3.divide(num1, num2);
 				break;
